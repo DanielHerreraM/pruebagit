@@ -30,7 +30,7 @@ class Perro:
     def nombre(self, nuevo_nombre):
         """Modifica el nombre del perro"""
         if isinstance(nuevo_nombre, str) and nuevo_nombre.strip():
-            self.nombre = nuevo_nombre
+            self._nombre = nuevo_nombre
         else:
             raise ValueError("El nombre debe ser una cadena no vacia")
 
